@@ -49,6 +49,7 @@
 
   <ItemGroup>
     <AndroidMavenLibrary Include="io.github.beyka:Android-TiffBitmapFactory" Version="0.9.9.1" />
+    <AndroidNamespaceReplacement Include='org.beyka.tiffbitmapfactory' Replacement='Net.Android.Tiff' />
   </ItemGroup>
 
 </Project>
