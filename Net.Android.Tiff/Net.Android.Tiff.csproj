@@ -1,22 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>      
-    <TargetFramework>net8.0-android</TargetFramework>
+    <TargetFramework>net9.0-android</TargetFramework>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <AssemblyName>Net.Android.Tiff</AssemblyName>
+    <IsTrimmable>true</IsTrimmable>
     <RootNamespace>Net.Android.Tiff</RootNamespace>
+    <AssemblyName>Net.Android.Tiff</AssemblyName>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <PackageId>Net.Android.Tiff</PackageId>
-    <PackageProjectUrl>https://github.com/AlexeyBuryanov/TiffBitmapFactoryNetAndroid</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/AlexeyBuryanov/TiffBitmapFactoryNetAndroid</RepositoryUrl>
-    <Description>Port for .NET 8.</Description>
-    <Version>1.0.0</Version>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>Pdfium for .NET for Android</Title>
+    <Summary>.NET for Android bindings for PdfiumAndroidKt Library</Summary>
+    <Description>.NET for Android bindings for PdfiumAndroidKt Library</Description>
     <Authors>Oleksii Burianov</Authors>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <PackageTags>net8-android;android;tiff</PackageTags>
+    <Owners>Oleksii Burianov</Owners>
+    <Copyright>© Oleksii Burianov.</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/AlexeyBuryanov/Net.Android.Tiff</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlexeyBuryanov/Net.Android.Tiff</RepositoryUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageVersion>1.1.0.0</PackageVersion>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageTags>android;tiff;tiff-encoder</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,5 +41,15 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Include="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
+
+  <ItemGroup>
+    <AndroidMavenLibrary Include="io.github.beyka:Android-TiffBitmapFactory" Version="0.9.9.1" />
+    <AndroidNamespaceReplacement Include='org.beyka.tiffbitmapfactory' Replacement='Net.Android.Tiff' />
+  </ItemGroup>
+
 </Project>
