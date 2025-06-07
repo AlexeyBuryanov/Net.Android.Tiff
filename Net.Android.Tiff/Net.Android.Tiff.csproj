@@ -8,8 +8,8 @@
     <IsTrimmable>true</IsTrimmable>
     <RootNamespace>Net.Android.Tiff</RootNamespace>
     <AssemblyName>Net.Android.Tiff</AssemblyName>
-    <AssemblyVersion>1.3.0.0</AssemblyVersion>
-    <FileVersion>1.3.0.0</FileVersion>
+    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <FileVersion>1.3.1.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -26,7 +26,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageVersion>1.3.0.0</PackageVersion>
+    <PackageVersion>1.3.1.0</PackageVersion>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageTags>android;tiff;tiff-encoder</PackageTags>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
